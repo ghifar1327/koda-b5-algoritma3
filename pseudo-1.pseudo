@@ -1,0 +1,14 @@
+DECLARE subtotal , nominal : INTEGER
+DECLARE d3, d5 : DOUBLE
+
+BEGIN
+d3 = subtotal * (3 / 100)
+d5 = subtotal * (5 / 100)
+INPUT (subtotal)
+ IF subtotal > 1000000
+  OUTPUT(d5)
+ ELSEIF subtotal >= 500000
+  OUTPUT(d3)
+ ENDIF
+  OUTPUT(subtotal)
+END
