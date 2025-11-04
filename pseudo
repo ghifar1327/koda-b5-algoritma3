@@ -1,16 +1,16 @@
-MENHITUNG DISKON BELANJA
+MENGHITUNG DISKON BELANJA
 
 DECLARE subtotal : INTEGER
-DECLARE diskon10, diskon5 : DOUBLE
+DECLARE diskon : DOUBLE
 
 BEGIN
-INPUT (subtotal)
+INPUT(subtotal)
  IF subtotal > 1000000
-  diskon10 <- subtotal * (10 / 100)
-  OUTPUT(diskon10)
+  diskon <- subtotal * (10 / 100)
+  OUTPUT(diskon)
  ELSEIF subtotal >= 500000
-  diskon5 <- subtotal * (5 / 100)
-  OUTPUT(diskon5)
+  diskon <- subtotal * (5 / 100)
+  OUTPUT(diskon)
  ENDIF
   OUTPUT(subtotal)
 END
